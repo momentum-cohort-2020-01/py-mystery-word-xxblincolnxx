@@ -31,6 +31,9 @@ class Game:
             print('YOU LOSE. THATS ALL.')
         else:
             print('YOU WIN!')
+        play_again = input('PLAY AGAIN? (Y/N)').upper()
+        if play_again == 'Y':
+            Game()
 
     def draw_word(self, possible_words):
         """
